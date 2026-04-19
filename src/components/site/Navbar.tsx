@@ -6,8 +6,8 @@ export function Navbar() {
   const { t } = useI18n();
   const links = [
     { href: "#services", label: t("nav.services") },
-    { href: "#pricing", label: t("nav.pricing") },
-    { href: "#about", label: t("nav.about") },
+    { href: "#faq", label: t("nav.faq") },
+    { href: "#apply", label: t("nav.apply") },
   ];
   return (
     <header className="fixed inset-x-0 top-0 z-50">

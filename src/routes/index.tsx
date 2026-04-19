@@ -3,7 +3,7 @@ import { I18nProvider } from "@/lib/i18n";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Services } from "@/components/site/Services";
-import { Pricing } from "@/components/site/Pricing";
+import { Faq } from "@/components/site/Faq";
 import { Apply } from "@/components/site/Apply";
 import { Footer } from "@/components/site/Footer";
 import { Toaster } from "@/components/ui/sonner";
@@ -30,7 +30,7 @@ function Index() {
         <main>
           <Hero />
           <Services />
-          <Pricing />
+          <Faq />
           <Apply />
         </main>
         <Footer />
