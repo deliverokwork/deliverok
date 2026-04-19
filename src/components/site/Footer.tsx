@@ -33,7 +33,7 @@ export function Footer() {
           },
           {
             h: t("nav.about"),
-            l: ["hello@deliverok.ee", "+372 5000 0000", "Tallinn, EE"],
+            l: ["hello@deliverok.sk", "+421 900 000 000", "Bratislava, SK"],
           },
         ].map((c) => (
           <div key={c.h}>
@@ -52,7 +52,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex w-[min(1200px,94%)] flex-col items-start justify-between gap-2 py-6 font-mono text-xs uppercase tracking-widest text-muted-foreground md:flex-row md:items-center">
-          <span>© {new Date().getFullYear()} Deliverok OÜ</span>
+          <span>© {new Date().getFullYear()} Deliverok s.r.o.</span>
           <span>{t("footer.rights")}</span>
         </div>
       </div>

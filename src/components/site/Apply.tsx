@@ -36,15 +36,15 @@ export function Apply() {
             <div className="mt-10 space-y-4 border-t border-border pt-8">
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted-foreground">
                 <span className="h-1.5 w-1.5 rounded-full bg-red-accent" />
-                <span>hello@deliverok.ee</span>
+                <span>hello@deliverok.sk</span>
               </div>
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted-foreground">
                 <span className="h-1.5 w-1.5 rounded-full bg-red-accent" />
-                <span>+372 5000 0000</span>
+                <span>+421 900 000 000</span>
               </div>
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted-foreground">
                 <span className="h-1.5 w-1.5 rounded-full bg-red-accent" />
-                <span>Tallinn · Tartu · Pärnu</span>
+                <span>Bratislava · Košice · Žilina</span>
               </div>
             </div>
           </div>
