@@ -4,7 +4,7 @@ import logo from "@/assets/deliverok-logo-white.png";
 export function Footer() {
   const { t } = useI18n();
   return (
-    <footer id="about" className="border-t border-border bg-surface/30">
+    <footer className="border-t border-border bg-surface/30">
       <div className="mx-auto grid w-[min(1200px,94%)] gap-10 py-16 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
           <img
@@ -24,15 +24,11 @@ export function Footer() {
             l: ["Bolt", "Wolt", "Bolt Food", "Wolt Drive"],
           },
           {
-            h: t("nav.pricing"),
-            l: [
-              t("pricing.starter.name"),
-              t("pricing.pro.name"),
-              t("pricing.fleet.name"),
-            ],
+            h: t("nav.faq"),
+            l: [t("faq.q1"), t("faq.q3"), t("faq.q6")],
           },
           {
-            h: t("nav.about"),
+            h: t("nav.apply"),
             l: ["hello@deliverok.sk", "+421 900 000 000", "Bratislava, SK"],
           },
         ].map((c) => (
