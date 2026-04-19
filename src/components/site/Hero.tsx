@@ -16,7 +16,7 @@ export function Hero() {
 
         <h1 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-semibold leading-[0.95] tracking-tight">
           {t("hero.title1")}{" "}
-          <span className="text-neon text-glow">{t("hero.title2")}</span>
+          <span className="text-red-accent text-glow-red">{t("hero.title2")}</span>
           <br />
           <span className="text-muted-foreground">{t("hero.title3")}</span>
         </h1>

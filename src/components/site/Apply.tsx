@@ -35,13 +35,16 @@ export function Apply() {
 
             <div className="mt-10 space-y-4 border-t border-border pt-8">
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon" /> support@fleetos.ee
+                <span className="h-1.5 w-1.5 rounded-full bg-red-accent" />
+                <span>hello@deliverok.ee</span>
               </div>
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon" /> +372 5000 0000
+                <span className="h-1.5 w-1.5 rounded-full bg-red-accent" />
+                <span>+372 5000 0000</span>
               </div>
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon" /> Tallinn · Tartu · Pärnu
+                <span className="h-1.5 w-1.5 rounded-full bg-red-accent" />
+                <span>Tallinn · Tartu · Pärnu</span>
               </div>
             </div>
           </div>

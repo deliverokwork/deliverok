@@ -12,11 +12,11 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto mt-4 flex w-[min(1200px,94%)] items-center justify-between rounded-full border border-border bg-background/60 px-4 py-2.5 backdrop-blur-xl md:px-6">
         <a href="#top" className="flex items-center gap-2.5">
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-neon glow-neon">
-            <span className="h-2 w-2 rounded-full bg-neon-foreground" />
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-red-accent glow-red">
+            <span className="h-2 w-2 rounded-full bg-neon" />
           </span>
           <span className="font-display text-base font-semibold tracking-tight">
-            FLEET<span className="text-neon">/</span>OS
+            deliver<span className="text-red-accent">o</span>k
           </span>
         </a>
         <nav className="hidden items-center gap-7 md:flex">

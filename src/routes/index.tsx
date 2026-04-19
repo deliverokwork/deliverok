@@ -12,11 +12,11 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "FLEET/OS — Bolt & Wolt courier fleet in Estonia" },
+      { title: "Deliverok — Bolt & Wolt courier fleet in Estonia" },
       {
         name: "description",
         content:
-          "Courier fleet for Bolt and Wolt in Estonia. Fast onboarding, weekly payouts, 24/7 support, vehicle rental.",
+          "Deliverok — courier fleet for Bolt and Wolt in Estonia. Fast onboarding, weekly payouts, 24/7 support, vehicle rental.",
       },
     ],
   }),

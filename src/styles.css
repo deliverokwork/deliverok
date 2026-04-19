@@ -66,34 +66,38 @@
   --color-neon-foreground: var(--neon-foreground);
   --color-surface: var(--surface);
   --color-surface-elevated: var(--surface-elevated);
+  --color-red: var(--red);
+  --color-red-foreground: var(--red-foreground);
 }
 
 :root {
   --radius: 0.875rem;
-  /* Dark by default — courier fleet identity */
-  --background: oklch(0.16 0.012 250);
-  --foreground: oklch(0.97 0.005 250);
-  --surface: oklch(0.20 0.014 250);
-  --surface-elevated: oklch(0.235 0.016 250);
-  --neon: oklch(0.88 0.22 135);
-  --neon-foreground: oklch(0.18 0.02 150);
-  --card: oklch(0.20 0.014 250);
-  --card-foreground: oklch(0.97 0.005 250);
-  --popover: oklch(0.22 0.014 250);
-  --popover-foreground: oklch(0.97 0.005 250);
-  --primary: oklch(0.88 0.22 135);
-  --primary-foreground: oklch(0.18 0.02 150);
-  --secondary: oklch(0.26 0.018 250);
-  --secondary-foreground: oklch(0.97 0.005 250);
-  --muted: oklch(0.24 0.014 250);
-  --muted-foreground: oklch(0.68 0.02 250);
-  --accent: oklch(0.30 0.02 250);
-  --accent-foreground: oklch(0.97 0.005 250);
-  --destructive: oklch(0.62 0.24 22);
-  --destructive-foreground: oklch(0.98 0.005 250);
+  /* Deliverok — black, lime, red */
+  --background: oklch(0.13 0 0);
+  --foreground: oklch(0.98 0 0);
+  --surface: oklch(0.17 0 0);
+  --surface-elevated: oklch(0.21 0 0);
+  --neon: oklch(0.88 0.24 135);
+  --neon-foreground: oklch(0.13 0.02 150);
+  --red: oklch(0.65 0.26 25);
+  --red-foreground: oklch(0.98 0 0);
+  --card: oklch(0.17 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.19 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.88 0.24 135);
+  --primary-foreground: oklch(0.13 0.02 150);
+  --secondary: oklch(0.22 0 0);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.20 0 0);
+  --muted-foreground: oklch(0.68 0 0);
+  --accent: oklch(0.65 0.26 25);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.65 0.26 25);
+  --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(1 0 0 / 8%);
   --input: oklch(1 0 0 / 10%);
-  --ring: oklch(0.88 0.22 135);
+  --ring: oklch(0.88 0.24 135);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -178,13 +182,28 @@
     background-color: var(--neon);
     color: var(--neon-foreground);
   }
+  .text-red-accent {
+    color: var(--red);
+  }
+  .bg-red-accent {
+    background-color: var(--red);
+    color: var(--red-foreground);
+  }
   .glow-neon {
     box-shadow:
-      0 0 24px oklch(0.88 0.22 135 / 0.35),
-      0 0 80px oklch(0.88 0.22 135 / 0.15);
+      0 0 24px oklch(0.88 0.24 135 / 0.4),
+      0 0 80px oklch(0.88 0.24 135 / 0.18);
+  }
+  .glow-red {
+    box-shadow:
+      0 0 24px oklch(0.65 0.26 25 / 0.45),
+      0 0 80px oklch(0.65 0.26 25 / 0.2);
   }
   .text-glow {
-    text-shadow: 0 0 28px oklch(0.88 0.22 135 / 0.55);
+    text-shadow: 0 0 28px oklch(0.88 0.24 135 / 0.6);
+  }
+  .text-glow-red {
+    text-shadow: 0 0 28px oklch(0.65 0.26 25 / 0.6);
   }
   .grid-bg {
     background-image:
