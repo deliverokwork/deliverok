@@ -7,11 +7,11 @@ export function Footer() {
       <div className="mx-auto grid w-[min(1200px,94%)] gap-10 py-16 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid h-8 w-8 place-items-center rounded-full bg-neon glow-neon">
-              <span className="h-2 w-2 rounded-full bg-neon-foreground" />
+            <span className="grid h-8 w-8 place-items-center rounded-full bg-red-accent glow-red">
+              <span className="h-2 w-2 rounded-full bg-neon" />
             </span>
             <span className="font-display text-base font-semibold tracking-tight">
-              FLEET<span className="text-neon">/</span>OS
+              deliver<span className="text-red-accent">o</span>k
             </span>
           </div>
           <p className="mt-5 max-w-xs text-sm text-muted-foreground">{t("footer.tagline")}</p>
@@ -32,7 +32,7 @@ export function Footer() {
           },
           {
             h: t("nav.about"),
-            l: ["support@fleetos.ee", "+372 5000 0000", "Tallinn, EE"],
+            l: ["hello@deliverok.ee", "+372 5000 0000", "Tallinn, EE"],
           },
         ].map((c) => (
           <div key={c.h}>
@@ -51,7 +51,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex w-[min(1200px,94%)] flex-col items-start justify-between gap-2 py-6 font-mono text-xs uppercase tracking-widest text-muted-foreground md:flex-row md:items-center">
-          <span>© {new Date().getFullYear()} FLEET/OS OÜ</span>
+          <span>© {new Date().getFullYear()} Deliverok OÜ</span>
           <span>{t("footer.rights")}</span>
         </div>
       </div>
