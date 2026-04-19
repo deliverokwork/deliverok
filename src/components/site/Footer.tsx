@@ -1,4 +1,5 @@
 import { useI18n } from "@/lib/i18n";
+import logo from "@/assets/deliverok-logo-white.png";
 
 export function Footer() {
   const { t } = useI18n();
@@ -6,14 +7,14 @@ export function Footer() {
     <footer id="about" className="border-t border-border bg-surface/30">
       <div className="mx-auto grid w-[min(1200px,94%)] gap-10 py-16 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="grid h-8 w-8 place-items-center rounded-full bg-red-accent glow-red">
-              <span className="h-2 w-2 rounded-full bg-neon" />
-            </span>
-            <span className="font-display text-base font-semibold tracking-tight">
-              deliver<span className="text-red-accent">o</span>k
-            </span>
-          </div>
+          <img
+            src={logo}
+            alt="Deliverok"
+            width={1536}
+            height={512}
+            loading="lazy"
+            className="h-9 w-auto"
+          />
           <p className="mt-5 max-w-xs text-sm text-muted-foreground">{t("footer.tagline")}</p>
         </div>
 

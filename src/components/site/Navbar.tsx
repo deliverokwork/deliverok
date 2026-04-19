@@ -1,5 +1,6 @@
 import { useI18n } from "@/lib/i18n";
 import { LangSwitch } from "./LangSwitch";
+import logo from "@/assets/deliverok-logo-white.png";
 
 export function Navbar() {
   const { t } = useI18n();
@@ -11,13 +12,14 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto mt-4 flex w-[min(1200px,94%)] items-center justify-between rounded-full border border-border bg-background/60 px-4 py-2.5 backdrop-blur-xl md:px-6">
-        <a href="#top" className="flex items-center gap-2.5">
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-red-accent glow-red">
-            <span className="h-2 w-2 rounded-full bg-neon" />
-          </span>
-          <span className="font-display text-base font-semibold tracking-tight">
-            deliver<span className="text-red-accent">o</span>k
-          </span>
+        <a href="#top" className="flex items-center" aria-label="Deliverok">
+          <img
+            src={logo}
+            alt="Deliverok"
+            width={1536}
+            height={512}
+            className="h-7 w-auto md:h-8"
+          />
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
