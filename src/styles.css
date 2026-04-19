@@ -182,13 +182,28 @@
     background-color: var(--neon);
     color: var(--neon-foreground);
   }
+  .text-red-accent {
+    color: var(--red);
+  }
+  .bg-red-accent {
+    background-color: var(--red);
+    color: var(--red-foreground);
+  }
   .glow-neon {
     box-shadow:
-      0 0 24px oklch(0.88 0.22 135 / 0.35),
-      0 0 80px oklch(0.88 0.22 135 / 0.15);
+      0 0 24px oklch(0.88 0.24 135 / 0.4),
+      0 0 80px oklch(0.88 0.24 135 / 0.18);
+  }
+  .glow-red {
+    box-shadow:
+      0 0 24px oklch(0.65 0.26 25 / 0.45),
+      0 0 80px oklch(0.65 0.26 25 / 0.2);
   }
   .text-glow {
-    text-shadow: 0 0 28px oklch(0.88 0.22 135 / 0.55);
+    text-shadow: 0 0 28px oklch(0.88 0.24 135 / 0.6);
+  }
+  .text-glow-red {
+    text-shadow: 0 0 28px oklch(0.65 0.26 25 / 0.6);
   }
   .grid-bg {
     background-image:
