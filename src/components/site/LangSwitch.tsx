@@ -1,7 +1,7 @@
 import { useI18n, type Lang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
-const LANGS: Lang[] = ["ru", "en", "sk"];
+const LANGS: Lang[] = ["uk", "en", "sk"];
 
 export function LangSwitch() {
   const { lang, setLang } = useI18n();
