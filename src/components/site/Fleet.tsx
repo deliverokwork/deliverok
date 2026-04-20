@@ -45,7 +45,9 @@ export function Fleet() {
                   width={1024}
                   height={1024}
                   loading="lazy"
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  className={`h-full w-full transition duration-700 group-hover:scale-105 ${
+                    v.key === "scooter" ? "object-contain p-6" : "object-cover"
+                  }`}
                 />
                 <span className="absolute left-4 top-4 rounded-full border border-border bg-background/70 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground backdrop-blur-md">
                   {t(`fleet.${v.key}.tag`)}
