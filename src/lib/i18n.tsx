@@ -257,7 +257,7 @@ type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: (k: string) => string };
 const I18nContext = createContext<Ctx | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("ru");
+  const [lang, setLang] = useState<Lang>("uk");
   const t = (k: string) => dictionaries[lang][k] ?? k;
   return <I18nContext.Provider value={{ lang, setLang, t }}>{children}</I18nContext.Provider>;
 }
