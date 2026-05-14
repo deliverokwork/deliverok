@@ -16,7 +16,18 @@ export function Hero() {
 
         <h1 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-semibold leading-[0.95] tracking-tight">
           {t("hero.title1")}{" "}
-          <span className="text-red-accent text-glow-red">{t("hero.title2")}</span>
+          {(() => {
+            const parts = t("hero.title2").split(/\b(Bolt|Wolt)\b/);
+            return parts.map((p, i) =>
+              p === "Bolt" ? (
+                <span key={i} style={{ color: "#34D186" }}>Bolt</span>
+              ) : p === "Wolt" ? (
+                <span key={i} style={{ color: "#00C2E8" }}>Wolt</span>
+              ) : (
+                <span key={i}>{p}</span>
+              )
+            );
+          })()}
           <br />
           <span className="text-muted-foreground">{t("hero.title3")}</span>
         </h1>
