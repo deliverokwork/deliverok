@@ -1,6 +1,6 @@
 import { useI18n } from "@/lib/i18n";
 import { LangSwitch } from "./LangSwitch";
-import logo from "@/assets/deliverok-logo-white.png";
+import logo from "@/assets/deliverok-logo-lime.png";
 
 export function Navbar() {
   const { t } = useI18n();
@@ -12,7 +12,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto mt-4 flex w-[min(1200px,94%)] items-center justify-between rounded-full border border-border bg-background/60 px-4 py-2.5 backdrop-blur-xl md:px-6">
-        <a href="#top" className="flex items-center rounded-full bg-black px-3 py-1.5" aria-label="Deliverok">
+        <a href="#top" className="flex items-center" aria-label="Deliverok">
           <img
             src={logo}
             alt="Deliverok"
