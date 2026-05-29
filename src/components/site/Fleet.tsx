@@ -1,5 +1,5 @@
 import { useI18n } from "@/lib/i18n";
-import ebike from "@/assets/ebike.jpg";
+import ebike from "@/assets/ebike.webp";
 import escooter from "@/assets/escooter.jpg";
 
 export function Fleet() {
