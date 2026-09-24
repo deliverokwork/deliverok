@@ -6,6 +6,7 @@ export function Navbar() {
   const { t } = useI18n();
   const links = [
     { href: "#services", label: t("nav.services") },
+    { href: "#taxi", label: t("nav.taxi") },
     { href: "#faq", label: t("nav.faq") },
     { href: "#apply", label: t("nav.apply") },
   ];
