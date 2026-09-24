@@ -1,6 +1,6 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
-import appCss from "../styles.css?url";
+import "../styles.css";
 
 function NotFoundComponent() {
   return (
@@ -29,10 +29,10 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "Deliverok" },
       { name: "description", content: "Deliverok is a website for courier services, designed for Bolt and Wolt delivery partners." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
+      { property: "og:title", content: "Deliverok" },
       { property: "og:description", content: "Deliverok is a website for courier services, designed for Bolt and Wolt delivery partners." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -43,10 +43,6 @@ export const Route = createRootRoute({
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5f28e2bb-a4a8-4433-ba9e-4f31ffecc768/id-preview-a28e5ebb--622f482f-b324-4f13-a820-69e6aef198d0.lovable.app-1776604289346.png" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",
