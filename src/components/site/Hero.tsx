@@ -45,7 +45,7 @@ export function Hero() {
               </>
             );
           })()}
-          <br />
+          {" "}
           <span className="text-muted-foreground">{t("hero.title3")}</span>
         </h1>
 
