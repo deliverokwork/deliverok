@@ -17,17 +17,32 @@ export function Hero() {
         <h1 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-semibold leading-[0.95] tracking-tight">
           {t("hero.title1")}{" "}
           {(() => {
-            const parts = t("hero.title2").split(/\b(Bolt|Wolt|Uber)\b/);
-            return parts.map((p, i) =>
-              p === "Bolt" ? (
-                <span key={i} style={{ color: "#34D186" }}>Bolt</span>
-              ) : p === "Wolt" ? (
-                <span key={i} style={{ color: "#00C2E8" }}>Wolt</span>
-              ) : p === "Uber" ? (
-                <span key={i} style={{ color: "#FFFFFF" }}>Uber</span>
-              ) : (
-                <span key={i}>{p}</span>
-              )
+            const full = t("hero.title2");
+            const dot = full.indexOf(". ");
+            const line1 = dot >= 0 ? full.slice(0, dot + 1) : full;
+            const line2 = dot >= 0 ? full.slice(dot + 2) : "";
+            const colorize = (s: string) =>
+              s.split(/\b(Bolt|Wolt|Uber)\b/).map((p, i) =>
+                p === "Bolt" ? (
+                  <span key={i} style={{ color: "#34D186" }}>Bolt</span>
+                ) : p === "Wolt" ? (
+                  <span key={i} style={{ color: "#00C2E8" }}>Wolt</span>
+                ) : p === "Uber" ? (
+                  <span key={i} style={{ color: "#FFFFFF" }}>Uber</span>
+                ) : (
+                  <span key={i}>{p}</span>
+                )
+              );
+            return (
+              <>
+                {colorize(line1)}
+                {line2 && (
+                  <>
+                    <br />
+                    {colorize(line2)}
+                  </>
+                )}
+              </>
             );
           })()}
           <br />
