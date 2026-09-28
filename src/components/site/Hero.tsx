@@ -87,14 +87,15 @@ export function Hero() {
               <span className="text-neon">●</span>
               <span>Wolt</span>
               <span className="text-neon">●</span>
-              <span>Tallinn</span>
+              <span>Bratislava</span>
               <span className="text-neon">●</span>
-              <span>Tartu</span>
+              <span>Košice</span>
               <span className="text-neon">●</span>
-              <span>Pärnu</span>
+              <span>Žilina</span>
               <span className="text-neon">●</span>
-              <span>Narva</span>
+              <span>Bolt</span>
               <span className="text-neon">●</span>
+              <span>Wolt</span>
             </div>
           ))}
         </div>
