@@ -61,6 +61,8 @@ export function Apply() {
               <option value="bolt">Bolt</option>
               <option value="wolt">Wolt</option>
               <option value="both">Bolt + Wolt</option>
+              <option value="bolt-taxi">Bolt Taxi</option>
+              <option value="uber-taxi">Uber Taxi</option>
             </select>
             <select required defaultValue="" className={inputCls + " md:col-span-2"}>
               <option value="" disabled>
