@@ -1,5 +1,5 @@
 import { useI18n } from "@/lib/i18n";
-import heroImg from "@/assets/hero-courier-taxi-black-bag.jpg";
+import heroImg from "@/assets/hero-courier-taxi-final.jpg";
 
 export function Hero() {
   const { t } = useI18n();
