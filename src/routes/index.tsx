@@ -36,9 +36,9 @@ function Index() {
         <Navbar />
         <main>
           <Hero />
+          <Taxi />
           <Fleet />
           <Services />
-          <Taxi />
           <DriverCars />
           <Faq />
           <Apply />
