@@ -37,9 +37,9 @@ function Index() {
         <main>
           <Hero />
           <Taxi />
+          <DriverCars />
           <Fleet />
           <Services />
-          <DriverCars />
           <Faq />
           <Apply />
         </main>
